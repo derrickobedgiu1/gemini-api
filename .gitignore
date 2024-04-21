@@ -1,0 +1,9 @@
+.idea
+composer.phar
+/vendor/
+.env
+.phpunit.result.cache
+composer.lock
+.php-cs-fixer.cache
+test.php
+client_secret.json
