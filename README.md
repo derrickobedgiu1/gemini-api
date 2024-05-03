@@ -2,7 +2,8 @@
 # Google Gemini PHP API
 ------
 > [!IMPORTANT]
-> **This library is an independent creation. It is neither endorsed nor an officially recognized library for interacting with the Google Gemini API. And please, if you decide to use it, make sure to guard your Service or OAuth 2.0 account credentials json file.**
+> 1. **This library is an independent creation. It is neither endorsed nor an officially recognized library for interacting with the Google Gemini API. And please, if you decide to use it, make sure to guard your Service or OAuth 2.0 account credentials json file.**
+> 2. **Expect major breaking changes in incoming v1.0.0 if you upgrade, as it'll be completely different from this current version.**
 
 [Gemini](https://deepmind.google/technologies/gemini/) is Google's largest and most capable AI model. This library contains all the info you need to start building applications with Gemini through the API. It is intended to give you access to the latest API features & capabilities.
 ## Table of Contents
@@ -232,7 +233,7 @@ $config = [
     'auth' => [
         'type' => 'oauth',
         'projectid' => 'your-project-id',
-        'credentials' => 'path/to/your-oauth-file.json,
+        'credentials' => 'path/to/your-oauth-file.json',
     ],
 ];
 ```
@@ -1634,8 +1635,7 @@ print_r($embeddings);
     "values": [
       0.013168523,
       -0.008711934,
-      0.04019695,
-      // --
+      0.04019695
     ]
   }
 }
@@ -1699,21 +1699,18 @@ foreach ($embeddings as $embedding){
     {
       "values": [
         -0.010632277,
-        // --
         -0.028534694
       ]
     },
     {
       "values": [
         0.018467998,
-        // --
         0.0018762538
       ]
     },
     {
       "values": [
         0.05808907,
-        // --
         -0.04440443
         ]
     }
@@ -1754,8 +1751,7 @@ print_r($embeddings);
   "embedding": {
     "values": [
       0.013168523,
-      0.060103577,
-      // --
+      0.060103577
     ]
   }
 }
@@ -1814,8 +1810,7 @@ print_r($embeddings);
   "embedding": {
     "values": [
       0.060187872,
-      0.035636507,
-      // etc
+      0.035636507
     ]
   }
 }
@@ -1878,8 +1873,7 @@ foreach ($tunedModels as $model) {
             "step": 2,
             "meanLoss": 13.745591,
             "computeTime": "2024-04-14T12:14:40.813240064Z"
-          },
-          // --
+          }
         ],
         "hyperparameters": {
           "epochCount": 5,
@@ -1911,8 +1905,7 @@ foreach ($tunedModels as $model) {
             "step": 2,
             "meanLoss": 13.782991,
             "computeTime": "2024-04-16T16:44:04.788885337Z"
-          },
-          // --
+          }
         ],
         "hyperparameters": {
           "epochCount": 5,
@@ -1972,7 +1965,6 @@ $tunedModel->state;
         "meanLoss": 13.782991,
         "computeTime": "2024-04-16T16:44:04.788885337Z"
       }
-      // --
     ],
     "hyperparameters": {
       "epochCount": 5,
@@ -2132,7 +2124,6 @@ $tunedModel->state;
         "meanLoss": 13.745591,
         "computeTime": "2024-04-14T12:14:40.813240064Z"
       }
-      // --
     ],
     "hyperparameters": {
       "epochCount": 5,
