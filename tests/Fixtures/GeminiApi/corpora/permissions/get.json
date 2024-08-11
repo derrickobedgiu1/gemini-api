@@ -1,0 +1,22 @@
+{
+    "statusCode": 200,
+    "headers": {
+        "Content-Type": "application\/json; charset=UTF-8",
+        "Vary": [
+            "X-Origin",
+            "Referer",
+            "Origin,Accept-Encoding"
+        ],
+        "Date": "Thu, 01 Aug 2024 09:43:28 GMT",
+        "Server": "scaffolding on HTTPServer2",
+        "Cache-Control": "private",
+        "X-XSS-Protection": "0",
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-Content-Type-Options": "nosniff",
+        "Server-Timing": "gfet4t7; dur=1603",
+        "Alt-Svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+        "Accept-Ranges": "none",
+        "Transfer-Encoding": "chunked"
+    },
+    "data": "{\"name\":\"corpora\\\/test-corpus-j0oywm69m798\\\/permissions\\\/101799614406133382015\",\"granteeType\":\"GROUP\",\"emailAddress\":\"redacted@example.com\",\"role\":\"READER\"}"
+}

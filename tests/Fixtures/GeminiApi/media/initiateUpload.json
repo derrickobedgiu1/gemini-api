@@ -1,0 +1,27 @@
+{
+    "statusCode": 200,
+    "headers": {
+        "Content-Type": "text\/plain; charset=utf-8",
+        "X-GUploader-UploadID": "AHxI1nOBnsGz4qR5Kw8ZDieMibOZEnlm0yrE5avYf25EZf_MDl_U4Kx1Nie7RWJwpjAkV3Rd-X50nXcc7N3pPJdc5n_oKp6lo0nIAuf3iRkJNIA",
+        "X-Goog-Upload-Status": "active",
+        "X-Goog-Upload-URL": "https:\/\/generativelanguage.googleapis.com\/upload\/v1beta\/files?upload_id=AHxI1nOBnsGz4qR5Kw8ZDieMibOZEnlm0yrE5avYf25EZf_MDl_U4Kx1Nie7RWJwpjAkV3Rd-X50nXcc7N3pPJdc5n_oKp6lo0nIAuf3iRkJNIA&upload_protocol=resumable",
+        "X-Goog-Upload-Control-URL": "https:\/\/generativelanguage.googleapis.com\/upload\/v1beta\/files?upload_id=AHxI1nOBnsGz4qR5Kw8ZDieMibOZEnlm0yrE5avYf25EZf_MDl_U4Kx1Nie7RWJwpjAkV3Rd-X50nXcc7N3pPJdc5n_oKp6lo0nIAuf3iRkJNIA&upload_protocol=resumable",
+        "X-Goog-Upload-Chunk-Granularity": "8388608",
+        "X-Goog-Upload-Header-x-google-esf-cloud-client-params": "backend_service_name: \"generativelanguage.googleapis.com\" backend_fully_qualified_method: \"google.ai.generativelanguage.v1beta.FileService.CreateFile\"",
+        "X-Goog-Upload-Header-X-Google-Session-Info": "GgQYECgLIAE6IxIhZ2VuZXJhdGl2ZWxhbmd1YWdlLmdvb2dsZWFwaXMuY29t",
+        "X-Goog-Upload-Header-X-Google-Backends": "unix:\/tmp\/esfbackend.1722061626.573537.1151046",
+        "X-Goog-Upload-Header-Content-Type": "application\/json; charset=UTF-8",
+        "X-Goog-Upload-Header-X-Google-Security-Signals": "FRAMEWORK=ONE_PLATFORM,ENV=borg,ENV_DEBUG=borg_user:genai-api;borg_job:prod.genai-api",
+        "X-Goog-Upload-Header-Vary": [
+            "Origin",
+            "X-Origin",
+            "Referer"
+        ],
+        "X-Goog-Upload-Header-X-Google-GFE-Backend-Request-Cost": "3.6524",
+        "Content-Length": "0",
+        "Date": "Sat, 27 Jul 2024 17:41:39 GMT",
+        "Server": "UploadServer",
+        "Alt-Svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+    },
+    "data": ""
+}

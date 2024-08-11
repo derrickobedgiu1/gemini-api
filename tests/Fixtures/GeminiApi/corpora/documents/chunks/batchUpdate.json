@@ -1,0 +1,22 @@
+{
+    "statusCode": 200,
+    "headers": {
+        "Content-Type": "application\/json; charset=UTF-8",
+        "Vary": [
+            "X-Origin",
+            "Referer",
+            "Origin,Accept-Encoding"
+        ],
+        "Date": "Thu, 01 Aug 2024 12:11:34 GMT",
+        "Server": "scaffolding on HTTPServer2",
+        "Cache-Control": "private",
+        "X-XSS-Protection": "0",
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-Content-Type-Options": "nosniff",
+        "Server-Timing": "gfet4t7; dur=1953",
+        "Alt-Svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+        "Accept-Ranges": "none",
+        "Transfer-Encoding": "chunked"
+    },
+    "data": "{\n  \"chunks\": [\n    {\n      \"name\": \"corpora\/test-corpus-j0oywm69m798\/documents\/test-document-rl76h09upqj3\/chunks\/f9r5tryc1zz9\",\n      \"data\": {\n        \"stringValue\": \"latest chunk text 1\"\n      },\n      \"customMetadata\": [\n        {\n          \"key\": \"key-1\",\n          \"stringValue\": \"some saloon value\"\n        }\n      ],\n      \"createTime\": \"2024-08-01T12:05:43.288696Z\",\n      \"updateTime\": \"2024-08-01T12:11:34.105015Z\",\n      \"state\": \"STATE_PENDING_PROCESSING\"\n    },\n    {\n      \"name\": \"corpora\/test-corpus-j0oywm69m798\/documents\/test-document-rl76h09upqj3\/chunks\/irklkw3iwnzs\",\n      \"data\": {\n        \"stringValue\": \"new saloon chunk text\"\n      },\n      \"customMetadata\": [\n        {\n          \"key\": \"key-2\",\n          \"stringValue\": \"some more value here\"\n        }\n      ],\n      \"createTime\": \"2024-08-01T12:05:43.288696Z\",\n      \"updateTime\": \"2024-08-01T12:11:34.105015Z\",\n      \"state\": \"STATE_PENDING_PROCESSING\"\n    }\n  ]\n}\n"
+}

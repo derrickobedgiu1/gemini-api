@@ -1,0 +1,22 @@
+{
+    "statusCode": 200,
+    "headers": {
+        "Content-Type": "application\/json; charset=UTF-8",
+        "Vary": [
+            "X-Origin",
+            "Referer",
+            "Origin,Accept-Encoding"
+        ],
+        "Date": "Sun, 28 Jul 2024 21:41:15 GMT",
+        "Server": "scaffolding on HTTPServer2",
+        "Cache-Control": "private",
+        "X-XSS-Protection": "0",
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-Content-Type-Options": "nosniff",
+        "Server-Timing": "gfet4t7; dur=3046",
+        "Alt-Svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+        "Accept-Ranges": "none",
+        "Transfer-Encoding": "chunked"
+    },
+    "data": "{\n  \"name\": \"corpora\/saloon-test-corpus-96ynlexks0pb\",\n  \"displayName\": \"Saloon Test Corpus\",\n  \"createTime\": \"2024-07-28T21:41:15.739920Z\",\n  \"updateTime\": \"2024-07-28T21:41:15.739920Z\"\n}\n"
+}

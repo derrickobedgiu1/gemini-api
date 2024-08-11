@@ -1,0 +1,18 @@
+{
+    "statusCode": 200,
+    "headers": {
+        "X-Goog-Upload-Status": "final",
+        "Content-Type": "application\/json; charset=UTF-8",
+        "Vary": [
+            "Origin",
+            "X-Origin",
+            "Referer"
+        ],
+        "X-GUploader-UploadID": "AHxI1nOBnsGz4qR5Kw8ZDieMibOZEnlm0yrE5avYf25EZf_MDl_U4Kx1Nie7RWJwpjAkV3Rd-X50nXcc7N3pPJdc5n_oKp6lo0nIAuf3iRkJNIA",
+        "Content-Length": "512",
+        "Date": "Sat, 27 Jul 2024 17:41:42 GMT",
+        "Server": "UploadServer",
+        "Alt-Svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+    },
+    "data": "{\n  \"file\": {\n    \"name\": \"files\/9z58r4iu98lv\",\n    \"displayName\": \"Sample File\",\n    \"mimeType\": \"image\/png\",\n    \"sizeBytes\": \"357556\",\n    \"createTime\": \"2024-07-27T17:41:42.049548Z\",\n    \"updateTime\": \"2024-07-27T17:41:42.049548Z\",\n    \"expirationTime\": \"2024-07-29T17:41:42.037163706Z\",\n    \"sha256Hash\": \"NmI4NmM3MjU3MzNjOTJhNDE5YjQwMDFkZDJiM2RkMDc2NzA2ZDMxNGFkOTQyZjJjZmYyNGY3YzlkYjcyY2FjZQ==\",\n    \"uri\": \"https:\/\/generativelanguage.googleapis.com\/v1beta\/files\/9z58r4iu98lv\",\n    \"state\": \"ACTIVE\"\n  }\n}\n"
+}

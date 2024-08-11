@@ -1,0 +1,22 @@
+{
+    "statusCode": 200,
+    "headers": {
+        "Content-Type": "application\/json; charset=UTF-8",
+        "Vary": [
+            "X-Origin",
+            "Referer",
+            "Origin,Accept-Encoding"
+        ],
+        "Date": "Thu, 01 Aug 2024 10:09:51 GMT",
+        "Server": "scaffolding on HTTPServer2",
+        "Cache-Control": "private",
+        "X-XSS-Protection": "0",
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-Content-Type-Options": "nosniff",
+        "Server-Timing": "gfet4t7; dur=1562",
+        "Alt-Svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+        "Accept-Ranges": "none",
+        "Transfer-Encoding": "chunked"
+    },
+    "data": "{\n  \"name\": \"corpora\/test-corpus-j0oywm69m798\/documents\/saloon-sample-document-w0myparwabba\",\n  \"displayName\": \"Saloon Sample Document\",\n  \"updateTime\": \"2024-08-01T10:09:51.802519Z\",\n  \"createTime\": \"2024-08-01T10:09:51.802519Z\"\n}\n"
+}

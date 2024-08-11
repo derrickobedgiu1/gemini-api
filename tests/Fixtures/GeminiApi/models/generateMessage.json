@@ -1,0 +1,22 @@
+{
+    "statusCode": 200,
+    "headers": {
+        "Content-Type": "application\/json; charset=UTF-8",
+        "Vary": [
+            "X-Origin",
+            "Referer",
+            "Origin,Accept-Encoding"
+        ],
+        "Date": "Mon, 05 Aug 2024 17:33:04 GMT",
+        "Server": "scaffolding on HTTPServer2",
+        "Cache-Control": "private",
+        "X-XSS-Protection": "0",
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-Content-Type-Options": "nosniff",
+        "Server-Timing": "gfet4t7; dur=17491",
+        "Alt-Svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+        "Accept-Ranges": "none",
+        "Transfer-Encoding": "chunked"
+    },
+    "data": "{\n  \"candidates\": [\n    {\n      \"author\": \"1\",\n      \"content\": \"The meaning of life is a question that has been asked by philosophers and theologians for centuries. There is no one answer that will satisfy everyone, but some possible answers include:\\n\\n* To find happiness and fulfillment.\\n* To make a difference in the world.\\n* To learn and grow as a person.\\n* To connect with others and build relationships.\\n* To experience the beauty of the world.\\n* To leave a legacy behind.\\n\\nUltimately, the meaning of life is up to each individual to decide. There is no right or wrong answer, and what matters most is that you find something that gives your life meaning.\\n\\nHere are some additional thoughts on the meaning of life:\\n\\n* The meaning of life is not something that is given to us, but something that we create for ourselves.\\n* The meaning of life is not something that we find, but something that we make.\\n* The meaning of life is not something that is fixed, but something that is constantly evolving.\\n* The meaning of life is not something that is easy to find, but something that is worth the effort.\\n* The meaning of life is not something that is the same for everyone, but something that is unique to each individual.\\n* The meaning of life is not something that is found in material possessions or external success, but something that is found within ourselves.\\n* The meaning of life is not something that is found in avoiding pain or suffering, but something that is found in facing them head-on.\\n* The meaning of life is not something that is found in being perfect, but something that is found in being perfectly imperfect.\\n* The meaning of life is not something that is found in having all the answers, but something that is found in being open to all the possibilities.\\n* The meaning of life is not something that is found in the end, but something that is found in the journey.\"\n    }\n  ],\n  \"messages\": [\n    {\n      \"author\": \"0\",\n      \"content\": \"What is the meaning of life?\"\n    }\n  ]\n}\n"
+}

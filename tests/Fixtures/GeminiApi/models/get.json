@@ -1,0 +1,22 @@
+{
+    "statusCode": 200,
+    "headers": {
+        "Content-Type": "application\/json; charset=UTF-8",
+        "Vary": [
+            "X-Origin",
+            "Referer",
+            "Origin,Accept-Encoding"
+        ],
+        "Date": "Sat, 27 Jul 2024 14:47:16 GMT",
+        "Server": "scaffolding on HTTPServer2",
+        "Cache-Control": "private",
+        "X-XSS-Protection": "0",
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-Content-Type-Options": "nosniff",
+        "Server-Timing": "gfet4t7; dur=1420",
+        "Alt-Svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+        "Accept-Ranges": "none",
+        "Transfer-Encoding": "chunked"
+    },
+    "data": "{\n  \"name\": \"models\/gemini-1.5-flash\",\n  \"version\": \"001\",\n  \"displayName\": \"Gemini 1.5 Flash\",\n  \"description\": \"Fast and versatile multimodal model for scaling across diverse tasks\",\n  \"inputTokenLimit\": 1048576,\n  \"outputTokenLimit\": 8192,\n  \"supportedGenerationMethods\": [\n    \"generateContent\",\n    \"countTokens\"\n  ],\n  \"temperature\": 1,\n  \"topP\": 0.95,\n  \"topK\": 64,\n  \"maxTemperature\": 2\n}\n"
+}

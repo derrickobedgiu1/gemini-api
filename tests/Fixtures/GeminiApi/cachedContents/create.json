@@ -1,0 +1,22 @@
+{
+    "statusCode": 200,
+    "headers": {
+        "Content-Type": "application\/json; charset=UTF-8",
+        "Vary": [
+            "X-Origin",
+            "Referer",
+            "Origin,Accept-Encoding"
+        ],
+        "Date": "Sun, 28 Jul 2024 08:31:22 GMT",
+        "Server": "scaffolding on HTTPServer2",
+        "Cache-Control": "private",
+        "X-XSS-Protection": "0",
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-Content-Type-Options": "nosniff",
+        "Server-Timing": "gfet4t7; dur=23889",
+        "Alt-Svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+        "Accept-Ranges": "none",
+        "Transfer-Encoding": "chunked"
+    },
+    "data": "{\n  \"name\": \"cachedContents\/lg5adbi62ykx\",\n  \"model\": \"models\/gemini-1.5-flash-001\",\n  \"createTime\": \"2024-07-28T08:31:22.670598Z\",\n  \"updateTime\": \"2024-07-28T08:31:22.670598Z\",\n  \"expireTime\": \"2024-07-28T09:31:09.658484576Z\",\n  \"displayName\": \"sherlock jr movie\",\n  \"usageMetadata\": {\n    \"totalTokenCount\": 696190\n  }\n}\n"
+}

@@ -1,0 +1,22 @@
+{
+    "statusCode": 200,
+    "headers": {
+        "Content-Type": "application\/json; charset=UTF-8",
+        "Vary": [
+            "X-Origin",
+            "Referer",
+            "Origin,Accept-Encoding"
+        ],
+        "Date": "Wed, 31 Jul 2024 06:58:46 GMT",
+        "Server": "scaffolding on HTTPServer2",
+        "Cache-Control": "private",
+        "X-XSS-Protection": "0",
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-Content-Type-Options": "nosniff",
+        "Server-Timing": "gfet4t7; dur=2438",
+        "Alt-Svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000",
+        "Accept-Ranges": "none",
+        "Transfer-Encoding": "chunked"
+    },
+    "data": "{\n  \"name\": \"tunedModels\/text-predictor-dsygc8rjuymz\/operations\/r6z44bgt2mog\",\n  \"metadata\": {\n    \"@type\": \"type.googleapis.com\/google.ai.generativelanguage.v1beta.CreateTunedModelMetadata\",\n    \"totalSteps\": 38,\n    \"completedSteps\": 2,\n    \"completedPercent\": 5.263158,\n    \"snapshots\": [\n      {\n        \"step\": 1,\n        \"meanLoss\": 11.499258,\n        \"computeTime\": \"2024-07-31T06:58:29.639551971Z\"\n      },\n      {\n        \"step\": 2,\n        \"meanLoss\": 13.789906,\n        \"computeTime\": \"2024-07-31T06:58:38.054294552Z\"\n      }\n    ],\n    \"tunedModel\": \"tunedModels\/text-predictor-dsygc8rjuymz\"\n  }\n}\n"
+}

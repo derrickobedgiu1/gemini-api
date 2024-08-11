@@ -1,0 +1,13 @@
+.idea
+.build
+/vendor/
+/@/
+files/Sherlock_Jr_FullMovie.mp4
+composer.phar
+.env
+.phpunit.result.cache
+composer.lock
+.php-cs-fixer.cache
+test.php
+debug.php
+client_secret.json

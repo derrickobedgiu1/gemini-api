@@ -1,0 +1,9 @@
+parameters:
+    level: max
+    paths:
+        - src
+        - tests
+    excludePaths:
+        - tests/Fixtures/GeminiApi
+    ignoreErrors:
+        - identifier: missingType.iterableValue
