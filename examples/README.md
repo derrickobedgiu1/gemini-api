@@ -69,6 +69,8 @@ echo $response->text(); // [{"productName": "Tranquility Tea"}, {"productName": 
 ### Text and Local Image Input
 
 ```php
+use Derrickob\GeminiApi\Data\Content;
+
 $data = base64_encode(file_get_contents('files/sample.jpg'));
 
 $response = $gemini->models()->generateContent([
@@ -82,6 +84,8 @@ echo $response->text(); // The image shows three people sitting in a waiting...
 ### Text and Uploaded File Input
 
 ```php
+use Derrickob\GeminiApi\Data\Content;
+
 $fileUri = 'https://generativelanguage.googleapis.com/v1beta/files/jzqrgvbe36r0';
 
 $response = $gemini->models()->generateContent([
@@ -95,6 +99,8 @@ echo $response->text(); // The image shows a scene from a futuristic or sci-fi m
 ### Text and Local + Uploaded File Inputs
 
 ```php
+use Derrickob\GeminiApi\Data\Content;
+
 $fileUri = 'https://generativelanguage.googleapis.com/v1beta/files/s7ycnqb6f06n'; // the banner image
 $blob = base64_encode(file_get_contents('files/sample.png'));
 
@@ -112,6 +118,8 @@ echo $response->text(); // The first image shows a still life featuring a plate 
 ### Text and Multiple Local File Inputs
 
 ```php
+use Derrickob\GeminiApi\Data\Content;
+
 $blobs = [
     [
         'mimeType' => 'image/jpeg',
@@ -134,6 +142,8 @@ echo $response->text(); // The first image is a promotional image for the Gemini
 ### Text and Multiple Uploaded File Inputs
 
 ```php
+use Derrickob\GeminiApi\Data\Content;
+
 $files = [
     [
         'fileUri' => 'https://generativelanguage.googleapis.com/v1beta/files/s7ycnqb6f06n',
@@ -156,6 +166,8 @@ echo $response->text(); // The first image is a poster for a product called "Gem
 ### Text and Multiple Local + Uploaded File Inputs
 
 ```php
+use Derrickob\GeminiApi\Data\Content;
+
 $blobs = [
     [
         'mimeType' => 'image/jpeg',
@@ -192,6 +204,8 @@ echo $response->text(); // The first image is a screenshot of a Google...
 ### Multi-turn Conversations (Chat)
 
 ```php
+use Derrickob\GeminiApi\Data\Content;
+
 $response = $gemini->models()->generateContent([
     'model' => 'models/gemini-1.5-flash',
     'contents' => [
