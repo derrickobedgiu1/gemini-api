@@ -38,16 +38,22 @@ trait HasContentData
 
     public static function createTextWithBlobContent(string $text, string $mimeType, string $data, ?string $role = null): Content
     {
-        $role = Role::from(strtolower((string) $role));
+        $role = isset($role) ? Role::from(strtolower($role)) : null;
 
-        return new Content([self::createTextWithBlobPart($text, $mimeType, $data)], $role);
+        return new Content([
+            self::createTextPart($text),
+            self::createBlobPart($mimeType, $data),
+        ], $role);
     }
 
     public static function createTextWithFileContent(string $text, string $fileUri, ?string $mimeType = null, ?string $role = null): Content
     {
-        $role = Role::from(strtolower((string) $role));
+        $role = isset($role) ? Role::from(strtolower($role)) : null;
 
-        return new Content([self::createTextWithFilePart($text, $fileUri, $mimeType)], $role);
+        return new Content([
+            self::createTextPart($text),
+            self::createFilePart($fileUri, $mimeType),
+        ], $role);
     }
 
     public static function parseContents(mixed $contents): array
