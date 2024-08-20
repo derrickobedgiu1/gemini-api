@@ -1,4 +1,22 @@
 # Additional Examples
+NOTE: This page only covers additional examples not already available on the main README page.
+
+<!-- TOC -->
+* [Additional Examples](#additional-examples)
+  * [Code Execution](#code-execution)
+  * [JSON Mode](#json-mode)
+  * [Chat Resource](#chat-resource)
+    * [Text and Local Image Input](#text-and-local-image-input)
+    * [Text and Uploaded File Input](#text-and-uploaded-file-input)
+    * [Text and Local + Uploaded File Inputs](#text-and-local--uploaded-file-inputs)
+    * [Text and Multiple Local File Inputs](#text-and-multiple-local-file-inputs)
+    * [Text and Multiple Uploaded File Inputs](#text-and-multiple-uploaded-file-inputs)
+    * [Text and Multiple Local + Uploaded File Inputs](#text-and-multiple-local--uploaded-file-inputs)
+    * [Multi-turn Conversations (Chat)](#multi-turn-conversations-chat)
+  * [Function Calling](#function-calling)
+    * [Request](#request)
+    * [Submit Function Call Response](#submit-function-call-response)
+<!-- TOC -->
 
 ## Code Execution
 
@@ -44,6 +62,146 @@ $response = $gemini->models()->generateContent([
 ]);
 
 echo $response->text(); // [{"productName": "Tranquility Tea"}, {"productName": "Golden Hour Brew"}, {"productName": "Serene Sip"}, {"productName": "Zenith Infusion"}, {"productName": "Midnight Bloom"}]
+```
+
+## Chat Resource
+
+### Text and Local Image Input
+
+```php
+$data = base64_encode(file_get_contents('files/sample.jpg'));
+
+$response = $gemini->models()->generateContent([
+    'model' => 'models/gemini-1.5-flash',
+    'contents' => Content::createTextWithBlobContent('What\'s in this image?', 'image/jpeg', $data, 'user'),
+]);
+
+echo $response->text(); // The image shows three people sitting in a waiting...
+```
+
+### Text and Uploaded File Input
+
+```php
+$fileUri = 'https://generativelanguage.googleapis.com/v1beta/files/jzqrgvbe36r0';
+
+$response = $gemini->models()->generateContent([
+    'model' => 'models/gemini-1.5-flash',
+    'contents' => Content::createTextWithFileContent('What\'s in this image?', $fileUri, 'image/jpeg', 'user'),
+]);
+
+echo $response->text(); // The image shows a scene from a futuristic or sci-fi movie...
+```
+
+### Text and Local + Uploaded File Inputs
+
+```php
+$fileUri = 'https://generativelanguage.googleapis.com/v1beta/files/s7ycnqb6f06n'; // the banner image
+$blob = base64_encode(file_get_contents('files/sample.png'));
+
+$response = $gemini->models()->generateContent([
+    'model' => 'models/gemini-1.5-flash',
+    'contents' => [
+        Content::createTextContent('Analyze these files and describe them for me', 'user'),
+        Content::createBlobWithFileContent('image/png', $blob, $fileUri, 'image/jpeg', 'user'),
+    ],
+]);
+
+echo $response->text(); // The first image shows a still life featuring a plate of blueberry...
+```
+
+### Text and Multiple Local File Inputs
+
+```php
+$blobs = [
+    [
+        'mimeType' => 'image/jpeg',
+        'data' => base64_encode(file_get_contents('files/banner.jpeg')),
+    ],
+    [
+        'mimeType' => 'image/png',
+        'data' => base64_encode(file_get_contents('files/sample.png')),
+    ],
+];
+
+$response = $gemini->models()->generateContent([
+    'model' => 'models/gemini-1.5-flash',
+    'contents' => Content::createTextWithBlobsContent('What are these images?', $blobs, 'user'),
+]);
+
+echo $response->text(); // The first image is a promotional image for the Gemini AI platform, which...
+```
+
+### Text and Multiple Uploaded File Inputs
+
+```php
+$files = [
+    [
+        'fileUri' => 'https://generativelanguage.googleapis.com/v1beta/files/s7ycnqb6f06n',
+        'mimeType' => 'image/jpeg',
+    ],
+    [
+        'fileUri' => 'https://generativelanguage.googleapis.com/v1beta/files/jzqrgvbe36r0',
+        'mimeType' => 'image/jpeg',
+    ],
+];
+
+$response = $gemini->models()->generateContent([
+    'model' => 'models/gemini-1.5-flash',
+    'contents' => Content::createTextWithFilesContent('What can you see?', $files, 'user'),
+]);
+
+echo $response->text(); // The first image is a poster for a product called "Gemini," which...
+```
+
+### Text and Multiple Local + Uploaded File Inputs
+
+```php
+$blobs = [
+    [
+        'mimeType' => 'image/jpeg',
+        'data' => base64_encode(file_get_contents('files/banner.jpeg')),
+    ],
+    [
+        'mimeType' => 'image/png',
+        'data' => base64_encode(file_get_contents('files/sample.png')),
+    ],
+];
+
+$files = [
+    [
+        'fileUri' => 'https://generativelanguage.googleapis.com/v1beta/files/s7ycnqb6f06n',
+        'mimeType' => 'image/jpeg',
+    ],
+    [
+        'fileUri' => 'https://generativelanguage.googleapis.com/v1beta/files/jzqrgvbe36r0',
+        'mimeType' => 'image/jpeg',
+    ],
+];
+
+$response = $gemini->models()->generateContent([
+    'model' => 'models/gemini-1.5-flash',
+    'contents' => [
+        Content::createTextContent('What can you see in these provided files?', 'user'),
+        Content::createBlobsAndFilesContent($blobs, $files, 'user'),
+    ],
+]);
+
+echo $response->text(); // The first image is a screenshot of a Google...
+```
+
+### Multi-turn Conversations (Chat)
+
+```php
+$response = $gemini->models()->generateContent([
+    'model' => 'models/gemini-1.5-flash',
+    'contents' => [
+        Content::createTextContent('Write the first line of a story about a magic backpack.', 'user'),
+        Content::createTextContent('In the bustling city of Meadow brook, lived a young girl named Sophie. She was a bright and curious soul with an imaginative mind.', 'model'),
+        Content::createTextContent('Can you set it in a quiet village in 1600s France?', 'user'),
+    ],
+]);
+
+echo $response->text(); // The worn leather of the backpack creaked softly as Marie, a young girl...
 ```
 
 ## Function Calling
