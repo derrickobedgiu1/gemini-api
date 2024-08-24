@@ -41,7 +41,7 @@ final class Gemini extends Connector
      *     baseUrl?: string,
      *     credentials?: array<string, mixed>,
      *     scopes?: string[],
-     *     cache?: CacheItemPoolInterface,
+     *     cacheItemPool?: CacheItemPoolInterface,
      *     cacheConfig?: array<string, mixed>,
      *     proxy?: array<string, mixed>,
      *     authenticateRequest?: AuthenticateRequest,
@@ -55,7 +55,7 @@ final class Gemini extends Connector
         $this->baseUrl = $configs['baseUrl'] ?? 'https://generativelanguage.googleapis.com';
         $this->credentials = $configs['credentials'] ?? null;
         $this->scopes = $configs['scopes'] ?? null;
-        $this->cacheItemPool = $configs['cache'] ?? null;
+        $this->cacheItemPool = $configs['cacheItemPool'] ?? null;
         $this->cacheConfig = $configs['cacheConfig'] ?? null;
         $this->proxy = $configs['proxy'] ?? null;
         $this->authenticateRequest = $configs['authenticateRequest'] ?? null;
@@ -127,7 +127,7 @@ final class Gemini extends Connector
             'baseUrl' => ['string', 'null'],
             'credentials' => ['array', 'null'],
             'scopes' => ['array', 'null'],
-            'cache' => [CacheItemPoolInterface::class, 'null'],
+            'cacheItemPool' => [CacheItemPoolInterface::class, 'null'],
             'cacheConfig' => ['array', 'null'],
             'proxy' => ['array', 'null'],
             'authenticateRequest' => [AuthenticateRequest::class, 'null'],
