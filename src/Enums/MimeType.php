@@ -33,6 +33,7 @@ enum MimeType: string
     case VIDEO_3GPP = 'video/3gpp';
 
     // Text formats
+    case APP_PDF = 'application/pdf';
     case TEXT_PLAIN = 'text/plain';
     case TEXT_HTML = 'text/html';
     case TEXT_CSS = 'text/css';
